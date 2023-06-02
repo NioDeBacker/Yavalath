@@ -38,6 +38,7 @@
     {"id":{"name":"spr_orb_yellow","path":"sprites/spr_orb_yellow/spr_orb_yellow.yy",},},
     {"id":{"name":"spr_tile","path":"sprites/spr_tile/spr_tile.yy",},},
     {"id":{"name":"spr_orb_blue","path":"sprites/spr_orb_blue/spr_orb_blue.yy",},},
+    {"id":{"name":"scr_gameplay_state","path":"scripts/scr_gameplay_state/scr_gameplay_state.yy",},},
     {"id":{"name":"obj_board","path":"objects/obj_board/obj_board.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
