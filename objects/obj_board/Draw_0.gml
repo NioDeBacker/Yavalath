@@ -1,16 +1,27 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Draw tiles of the board
+
 for (var row = 0; row < array_length(board); row++) {
 	for (var col = 0; col < array_length(board[row]); col++) {
-		var xOffset = abs(row - 4) * 32;
-		var yOffset = 8 - (row * 16);
-		var tileX = x + (col * 64) + xOffset;
-		var tileY = y + (row * 64) + yOffset;
+		var tilePos = calculate_tile_pos(row, col, x, y);
+		var tileX = tilePos[0];
+		var tileY = tilePos[1];
 		draw_sprite(spr_tile, 0, tileX, tileY);
 		draw_text(tileX, tileY, board[row][col]);
-		if (col == 0) {
+		if (board[row][col] == 1) {
 			draw_sprite(spr_orb_yellow, 0, tileX + 7, tileY + 7);
+		} else if (board[row][col] == 2) {
+			draw_sprite(spr_orb_blue, 0, tileX + 7, tileY + 7);
 		}
 
 	}
+}
+
+var tileIndexPos = calculate_tile_index(mouse_x, mouse_y, x, y);
+var tileIndexX = tileIndexPos[0];
+var tileIndexY = tileIndexPos[1];
+if (tileIndexX >= 0 && array_length(board) > tileIndexX && array_length(board[tileIndexX]) > tileIndexY && tileIndexY >= 0 ) {
+	var tileDebugPos = calculate_tile_pos(tileIndexX, tileIndexY, x, y);
+	var tileDebugX = tileDebugPos[0];
+	var tileDebugY = tileDebugPos[1];
+	draw_circle(tileDebugX+32, tileDebugY+32, 32, true);
 }

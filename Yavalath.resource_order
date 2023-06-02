@@ -18,5 +18,6 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_orb_yellow","order":1,"path":"sprites/spr_orb_yellow/spr_orb_yellow.yy",},
+    {"name":"spr_orb_blue","order":2,"path":"sprites/spr_orb_blue/spr_orb_blue.yy",},
   ],
 }
