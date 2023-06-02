@@ -1,10 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description reset game button
 board = array_create(9);
 insertXPos = 0;
 insertYPos = 0;
 insertTile = array_create(2);
-
+turn = 0;
 player_turn = player.YELLOW;
 win_state = -1;
 

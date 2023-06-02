@@ -3,6 +3,7 @@ board = array_create(9);
 insertXPos = 0;
 insertYPos = 0;
 insertTile = array_create(2);
+turn = 0;
 enum player {
 	BLUE,
 	YELLOW
