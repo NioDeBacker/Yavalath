@@ -9,7 +9,7 @@ if (win_state == -1) {
 	if (tileX >= 0 && array_length(board) > tileX && array_length(board[tileX]) > tileY && tileY >= 0 ) {
 		if (board[tileX][tileY] == 0) {
 			board[tileX][tileY] = player_turn == player.YELLOW ? 1 : 2;
-			player_turn = player_turn == player.YELLOW ? player.BLUE : player.YELLOW;
+			//player_turn = player_turn == player.YELLOW ? player.BLUE : player.YELLOW;
 			win_state = is_game_over(board);
 		}	
 	}
