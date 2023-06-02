@@ -1,12 +1,10 @@
-/// @description The board contains the data structure of the board
+/// @description Insert description here
+// You can write your code in this editor
 board = array_create(9);
 insertXPos = 0;
 insertYPos = 0;
 insertTile = array_create(2);
-enum player {
-	BLUE,
-	YELLOW
-};
+
 player_turn = player.YELLOW;
 win_state = -1;
 

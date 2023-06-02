@@ -25,3 +25,7 @@ if (tileIndexX >= 0 && array_length(board) > tileIndexX && array_length(board[ti
 	var tileDebugY = tileDebugPos[1];
 	draw_circle(tileDebugX+32, tileDebugY+32, 32, true);
 }
+
+if (win_state != -1) {
+	draw_text(64, 64, win_state == player.YELLOW ? "YELLOW WINS" : "BLUE WINS");
+}
