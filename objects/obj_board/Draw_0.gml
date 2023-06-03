@@ -26,6 +26,8 @@ if (tileIndexX >= 0 && array_length(board) > tileIndexX && array_length(board[ti
 	draw_circle(tileDebugX+32, tileDebugY+32, 32, true);
 }
 
+draw_rectangle(0, 0, 64, 64, false);
+
 if (win_state != -1) {
 	draw_text(64, 64, win_state == player.YELLOW ? "YELLOW WINS" : "BLUE WINS");
 }

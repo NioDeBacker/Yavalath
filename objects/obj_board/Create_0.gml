@@ -15,7 +15,7 @@ for(var i = 0; i < array_length(board); i ++) {
 	var row_len = 9 - abs(i - 4);
 	board[i] = array_create(row_len);
 }
-global.Camera = camera_create_view(0, 0, 768, 512);
-view_enabled = true;
-view_visible[0] = true;
-view_set_camera(0, global.Camera);
+//global.Camera = camera_create_view(0, 0, 800, 600);
+//view_enabled = true;
+//view_visible[0] = true;
+//view_set_camera(0, global.Camera);

@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"scr_board_tiles","path":"scripts/scr_board_tiles/scr_board_tiles.yy",},},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_orb_yellow","path":"sprites/spr_orb_yellow/spr_orb_yellow.yy",},},
     {"id":{"name":"spr_tile","path":"sprites/spr_tile/spr_tile.yy",},},
     {"id":{"name":"spr_orb_blue","path":"sprites/spr_orb_blue/spr_orb_blue.yy",},},
