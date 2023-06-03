@@ -7,17 +7,19 @@ function is_game_over(board){
 		var blue_counter = 0;
 		for (var j = 0; j < array_length(board[i]); j++) {
 			if (board[i][j] == 1) {
-				blue_counter = 0;
+				
 				yellow_counter++;
-				if (yellow_counter == 4) {
+				if (yellow_counter == 4 or blue_counter == 3) {
 					return player.YELLOW;
 				}
+				blue_counter = 0;
 			} else if (board[i][j] == 2) {
-				yellow_counter = 0;
+				
 				blue_counter++;
-				if (blue_counter == 4) {
+				if (blue_counter == 4 or yellow_counter == 3) {
 					return player.BLUE;
 				}
+				yellow_counter = 0;
 			} else {
 				if (yellow_counter == 3) {
 					return player.BLUE;
@@ -51,12 +53,18 @@ function is_game_over(board){
 		var b_asc = 0;
 		while (row < 9 and col < cols and counter < (start_row + start_col + 5)) {
 			if (board[row][col] == 1) {
+				if (b_asc == 3) {
+					return player.YELLOW;	
+				}
 				b_asc = 0;
 				y_asc++;
 				if (y_asc == 4) {
 					return player.YELLOW;
 				}
 			} else if (board[row][col] == 2) {
+				if (y_asc == 3) {
+					return player.BLUE;	
+				}
 				y_asc = 0;
 				b_asc++;
 				if (b_asc == 4) {
@@ -109,17 +117,19 @@ function is_game_over(board){
 		// counter: 9 is col of longest row (starting point (0,0))
 		while (row < 9 and col < cols and counter < (9 - start_row - start_col)) {
 			if (board[row][col] == 1) {
-				b_desc = 0;
 				y_desc++;
-				if (y_desc == 4) {
+				if (y_desc == 4 or b_desc == 3) {
 					return player.YELLOW;
 				}
+				b_desc = 0;
 			} else if (board[row][col] == 2) {
-				y_desc = 0;
+
 				b_desc++;
-				if (b_desc == 4) {
+				if (b_desc == 4 or y_desc == 3) {
 					return player.BLUE;
 				}
+								
+				y_desc = 0;
 			} else {
 				if (y_desc == 3) {
 					return player.BLUE;
