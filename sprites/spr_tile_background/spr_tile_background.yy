@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_tile_background",
-  "bbox_bottom": 128,
+  "bbox_bottom": 191,
   "bbox_left": 0,
-  "bbox_right": 128,
+  "bbox_right": 383,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -15,8 +15,8 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"09c5ee1e-6d99-4357-ba95-667713d77840",},
   ],
-  "gridX": 16,
-  "gridY": 16,
+  "gridX": 64,
+  "gridY": 64,
   "height": 192,
   "HTile": false,
   "layers": [
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 192,
+  "width": 384,
 }
