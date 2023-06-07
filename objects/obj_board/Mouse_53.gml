@@ -1,7 +1,6 @@
 /// @description player tries to place tile
 if (win_state == -1) {
 	var tilePos = calculate_tile_index(mouse_x, mouse_y, x, y);
-	show_debug_message("hier");
 	insertTile = tilePos;
 	var tileX = tilePos[0];
 	var tileY = tilePos[1];
@@ -17,3 +16,4 @@ if (win_state == -1) {
 		}	
 	}
 }
+
