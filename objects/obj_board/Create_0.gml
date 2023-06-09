@@ -4,10 +4,6 @@ insertXPos = 0;
 insertYPos = 0;
 insertTile = array_create(2);
 turn = 0;
-enum player {
-	BLUE,
-	YELLOW
-};
 player_turn = player.YELLOW;
 win_state = -1;
 

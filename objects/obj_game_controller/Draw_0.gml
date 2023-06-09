@@ -1,4 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
-draw_circle(board_x, board_y, 10, false);
-draw_text(64, 64, string("({0}, {1})", board_x, board_y));
+
+// draw cursor
+var tileIndexPos = calculate_tile_index(mouse_x, mouse_y, board.x, board.y);
+var tileIndexX = tileIndexPos[0];
+var tileIndexY = tileIndexPos[1];
+if (tileIndexX >= 0 && array_length(board.board) > tileIndexX && array_length(board.board[tileIndexX]) > tileIndexY && tileIndexY >= 0 ) {
+	var tileDebugPos = calculate_tile_pos(tileIndexX, tileIndexY, board.x, board.y);
+	var tileDebugX = tileDebugPos[0];
+	var tileDebugY = tileDebugPos[1];
+	draw_circle(tileDebugX+32, tileDebugY+32, 32, true);
+}

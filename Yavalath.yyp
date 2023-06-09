@@ -34,6 +34,7 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
+    {"id":{"name":"scr_view","path":"scripts/scr_view/scr_view.yy",},},
     {"id":{"name":"scr_board_tiles","path":"scripts/scr_board_tiles/scr_board_tiles.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_orb_yellow","path":"sprites/spr_orb_yellow/spr_orb_yellow.yy",},},

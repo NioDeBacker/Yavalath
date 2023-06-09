@@ -1,5 +1,6 @@
 /// @description Draw tiles of the board
 
+// draw tiles
 for (var row = 0; row < array_length(board); row++) {
 	for (var col = 0; col < array_length(board[row]); col++) {
 		var tilePos = calculate_tile_pos(row, col, x, y);
@@ -16,16 +17,7 @@ for (var row = 0; row < array_length(board); row++) {
 	}
 }
 
-var tileIndexPos = calculate_tile_index(mouse_x, mouse_y, x, y);
-var tileIndexX = tileIndexPos[0];
-var tileIndexY = tileIndexPos[1];
-if (tileIndexX >= 0 && array_length(board) > tileIndexX && array_length(board[tileIndexX]) > tileIndexY && tileIndexY >= 0 ) {
-	var tileDebugPos = calculate_tile_pos(tileIndexX, tileIndexY, x, y);
-	var tileDebugX = tileDebugPos[0];
-	var tileDebugY = tileDebugPos[1];
-	draw_circle(tileDebugX+32, tileDebugY+32, 32, true);
-}
-draw_circle(x, y, 10, true);
+// draw win state
 if (win_state != -1) {
 	draw_text(64, 64, win_state == player.YELLOW ? "YELLOW WINS" : "BLUE WINS");
 }
