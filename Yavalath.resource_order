@@ -14,6 +14,7 @@
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
+    {"name":"menu","order":3,"path":"folders/Objects/menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scr_view","order":2,"path":"scripts/scr_view/scr_view.yy",},
