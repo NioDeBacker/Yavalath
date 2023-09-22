@@ -5,6 +5,7 @@
     {"name":"Fonts","order":5,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":11,"path":"folders/Notes.yy",},
     {"name":"Objects","order":7,"path":"folders/Objects.yy",},
+    {"name":"menu","order":3,"path":"folders/Objects/menu.yy",},
     {"name":"Particle Systems","order":13,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":3,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":8,"path":"folders/Rooms.yy",},
@@ -14,7 +15,7 @@
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"menu","order":3,"path":"folders/Objects/menu.yy",},
+    {"name":"button_actions","order":3,"path":"folders/Scripts/button_actions.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scr_view","order":2,"path":"scripts/scr_view/scr_view.yy",},

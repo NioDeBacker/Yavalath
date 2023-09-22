@@ -30,9 +30,13 @@
   "physicsStartAwake": true,
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"button_text","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"default button text\"","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"button_action","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"button_action_default","varType":5,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_tile",
+    "path": "sprites/spr_tile/spr_tile.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

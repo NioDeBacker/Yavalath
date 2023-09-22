@@ -10,7 +10,7 @@ if (mouse_check_button_released(mb_left))
 	clicked = false;
 
 	if (hovering) {
-		// TODO: reusable button functionality
+		script_execute(button_action);
 	}
 	
 } 
